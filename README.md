@@ -1,6 +1,8 @@
 myexperiment.org public dataset imported to Neo4J.
 
-Target: Implement import using giVE
+Target:
+
+	 Implement import using giVE
         
 	Implement custom UI/quick search via Chrome extension
 

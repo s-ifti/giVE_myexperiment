@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://bl.ocks.org/rkirsling/raw/5001347/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Directed Graph Editor</title>
+    <link rel="stylesheet" href="./Directed Graph Editor_files/app.css">
+    <style type="text/css">
+    		.tip {
+				position:fixed;
+				z-index:9999;
+				right: 2em;
+				bottom: 2em;
+				background-color: rgba(220,220,220,0.3);
+				color:black;
+				width:22em;
+				height:5em;
+				padding:1em;
+				border-radius:1em;
+				box-shadow:0px 0px 5px rgba(0,0,0,0.6);
+				-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+				overflow:hidden;
+				 
+				font-size:0.9em;
+    		}
+    		.tip:hover {
+
+    			background-color:white;
+    		}
+    		.tip .row {
+
+    			display:block;
+    			padding:0;
+    			margin:0;
+    			vertical-align: top;
+    		}
+    		.tip .row .prop
+    		{
+    			width:19%;
+    			display:inline-block;
+    			vertical-align: top;
+    			color:#555;
+    		}
+			 body{
+
+			 	font-family:Helvetica,Arial;
+
+			 	color: #888;
+			 }
+
+    </style>
+  </head>
+  
+  <body>
+  <div class="tip">
+    
+    <div style="float:right"><button onclick="fetchUserD3(d3.select('.tip .uri .val').text());" type="button" >Show Friends</button></div>
+
+  	<div class="row name">
+	  	
+	  	<div class="val"></div>
+  	</div> 
+  	<div class="row uri" style="position:absolute;bottom:4px;left:4px">
+	  	
+	  	<div class="val" style="color:white;"></div>
+  	</div> 
+  </div>
+
+  <script src="./Directed Graph Editor_files/d3.v3.min.js"></script>
+  <script src="./Directed Graph Editor_files/app.js"></script> 
+</body></html>
